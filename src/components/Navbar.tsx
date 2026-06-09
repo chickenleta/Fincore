@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center gap-2">
-            <img src="/gerbangro/RO V no BG.png" alt="RO V Logo" className="h-10 w-auto object-contain" />
+            <img src="/RO V no BG.png" alt="RO V Logo" className="h-10 w-auto object-contain" />
             <span className="font-display font-bold text-xl tracking-tight text-brand-950">
               RO V Jakarta 2
             </span>
