@@ -108,7 +108,7 @@ export default function Hero() {
         style={{ x: bgX, y: bgY }}
       >
         <img 
-          src="/JKT2.png" 
+          src="/image/JKT2.png" 
           alt="Office Background"
           className="w-full h-full object-cover"
         />
