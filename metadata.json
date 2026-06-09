@@ -1,0 +1,6 @@
+{
+  "name": "FinCore Capital",
+  "description": "Halaman landing perusahaan finance modern dengan data kinerja dan manajemen.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
