@@ -107,7 +107,7 @@ export default function Hero() {
         className="absolute inset-0 -m-8"
         style={{ x: bgX, y: bgY }}
       >
-        <img 
+        <Image 
           src="/JKT2.png" 
           alt="Office Background"
           className="w-full h-full object-cover"
