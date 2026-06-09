@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-6 text-white">
-              <Image src="/RO V no BG.png" alt="RO V Logo" className="h-10 w-auto object-contain brightness-0 invert" />
+              <img src="/public/RO V no BG.png" alt="RO V Logo" className="h-10 w-auto object-contain brightness-0 invert" />
               <span className="font-display font-bold text-xl tracking-tight">RO V Jakarta 2</span>
             </div>
             <p className="text-sm text-slate-400 mb-6">
