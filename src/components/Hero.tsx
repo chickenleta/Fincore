@@ -99,7 +99,7 @@ export default function Hero() {
     <section 
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden"
+      className="relative pt-16 pb-20 lg:pt-24 lg:pb-32 overflow-hidden"
       style={{ perspective: 1200 }}
     >
       {/* Background image & parallax overlay */}
