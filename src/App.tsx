@@ -6,6 +6,7 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Performance from './components/Performance';
+import GoldSavings from './components/GoldSavings';
 import Team from './components/Team';
 import Footer from './components/Footer';
 
@@ -16,6 +17,7 @@ export default function App() {
       <main className="flex-grow">
         <Hero />
         <Performance />
+        <GoldSavings />
         <Team />
       </main>
       <Footer />

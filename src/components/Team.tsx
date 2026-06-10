@@ -107,7 +107,7 @@ export default function Team() {
         <div className="relative group/carousel">
           <button 
             onClick={scrollLeft}
-            className="absolute left-0 lg:-left-6 top-[35%] -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-brand-600 hover:text-white hover:border-brand-600 transition-all shadow-xl opacity-0 group-hover/carousel:opacity-100 focus:opacity-100 -translate-x-1/2"
+            className="absolute left-0 lg:-left-6 top-[35%] -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-brand-600 hover:text-white hover:border-brand-600 transition-all shadow-xl opacity-100 lg:opacity-0 lg:group-hover/carousel:opacity-100 focus:opacity-100 -translate-x-1/2"
             aria-label="Previous"
           >
             <ChevronLeft className="w-6 h-6" />
@@ -115,7 +115,7 @@ export default function Team() {
           
           <button 
             onClick={scrollRight}
-            className="absolute right-0 lg:-right-6 top-[35%] -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-brand-600 hover:text-white hover:border-brand-600 transition-all shadow-xl opacity-0 group-hover/carousel:opacity-100 focus:opacity-100 translate-x-1/2"
+            className="absolute right-0 lg:-right-6 top-[35%] -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-600 hover:bg-brand-600 hover:text-white hover:border-brand-600 transition-all shadow-xl opacity-100 lg:opacity-0 lg:group-hover/carousel:opacity-100 focus:opacity-100 translate-x-1/2"
             aria-label="Next"
           >
             <ChevronRight className="w-6 h-6" />
@@ -128,7 +128,7 @@ export default function Team() {
           `}} />
           <div 
             ref={scrollContainerRef}
-            className="team-carousel flex gap-8 overflow-x-auto snap-x snap-mandatory pb-8"
+            className="team-carousel flex gap-6 md:gap-8 overflow-x-auto snap-x snap-mandatory pb-8 px-2"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {team.map((member, index) => (
@@ -138,7 +138,7 @@ export default function Team() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: (index % 4) * 0.1 }}
-                className="group w-full md:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] flex-none snap-start"
+                className="group w-[260px] sm:w-[300px] md:w-[calc(50%-1rem)] lg:w-[calc(25%-1.5rem)] flex-none snap-start"
               >
                 <div className="relative overflow-hidden rounded-2xl mb-6 bg-slate-100 aspect-[3/4]">
                   <img 
