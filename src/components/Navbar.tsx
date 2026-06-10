@@ -6,12 +6,12 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 w-full z-50 bg-white border-b border-slate-200/70 rounded-b-2xl shadow-md">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-slate-200/70 rounded-b-2xl shadow-md select-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20">
-          <div className="flex items-center gap-2">
-            <img src="/RO V no BG.png" alt="RO V Logo" className="h-9 md:h-11 w-auto object-contain" />
-            <span className="font-display font-semibold text-lg md:text-xl tracking-tight text-brand-950">
+          <div className="flex items-center gap-2 shrink-0">
+            <img src="/RO V no BG.png" alt="RO V Logo" className="h-9 md:h-11 w-auto object-contain shrink-0" />
+            <span className="font-display font-semibold text-lg md:text-xl tracking-tight text-brand-950 shrink-0">
               RO V Jakarta 2
             </span>
           </div>
@@ -27,8 +27,8 @@ export default function Navbar() {
             </div>
           </div>
 
-          <div className="md:hidden flex items-center">
-            <button onClick={() => setIsOpen(!isOpen)} className="text-slate-600 p-1 hover:bg-slate-100 rounded-lg">
+          <div className="md:hidden flex items-center shrink-0">
+            <button onClick={() => setIsOpen(!isOpen)} className="text-slate-600 p-1 hover:bg-slate-100 rounded-lg shrink-0">
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
