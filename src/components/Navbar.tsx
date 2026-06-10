@@ -6,30 +6,31 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-md border-b border-slate-900/10 supports-[backdrop-filter]:bg-white/60 transition-all duration-300 select-none">
+    <nav className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b border-slate-900/10 transition-all select-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 md:h-20">
-          <div className="flex items-center gap-2 shrink-0">
-            <img src="/RO V no BG.png" alt="RO V Logo" className="h-9 md:h-11 w-auto object-contain shrink-0" />
-            <span className="font-display font-semibold text-lg md:text-xl tracking-tight text-brand-950 shrink-0">
+        <div className="flex justify-between items-center h-16">
+          <div className="flex items-center gap-3 shrink-0">
+            <img src="/RO V no BG.png" alt="RO V Logo" className="h-9 w-auto object-contain shrink-0" />
+            <span className="font-display font-semibold text-base md:text-lg tracking-tight text-slate-900 shrink-0">
               RO V Jakarta 2
             </span>
           </div>
           
-          <div className="hidden md:flex items-center gap-8 font-medium">
-            <a href="#kinerja" className="text-slate-600 hover:text-brand-600 transition-colors">Kinerja</a>
-            <a href="#emas" className="text-slate-600 hover:text-brand-600 transition-colors">Tabungan E-Mas</a>
-            <a href="#manajemen" className="text-slate-600 hover:text-brand-600 transition-colors">Manajemen</a>
-            <div className="flex items-center gap-4 ml-4">
-              <button className="bg-brand-950 text-white px-5 py-2 rounded-full hover:bg-brand-900 transition-colors text-sm">
-                Hubungi Kami
-              </button>
-            </div>
+          <div className="hidden md:flex items-center gap-6">
+            <a href="#kinerja" className="text-sm font-semibold text-slate-700 hover:text-teal-600 transition-colors">Kinerja</a>
+            <a href="#emas" className="text-sm font-semibold text-slate-700 hover:text-teal-600 transition-colors">Tabungan E-Mas</a>
+            <a href="#manajemen" className="text-sm font-semibold text-slate-700 hover:text-teal-600 transition-colors">Manajemen</a>
+            
+            <div className="w-px h-4 bg-slate-900/10 mx-1"></div>
+            
+            <button className="bg-brand-950 text-white font-semibold text-xs px-4 py-2 rounded-full hover:bg-teal-750 transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2">
+              Hubungi Kami
+            </button>
           </div>
 
           <div className="md:hidden flex items-center shrink-0">
-            <button onClick={() => setIsOpen(!isOpen)} className="text-slate-600 p-1 hover:bg-slate-100 rounded-lg shrink-0">
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            <button onClick={() => setIsOpen(!isOpen)} className="text-slate-600 p-1.5 hover:bg-slate-100 rounded-lg shrink-0 transition-colors focus:outline-none">
+              {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>
@@ -38,14 +39,14 @@ export default function Navbar() {
       {/* Mobile menu */}
       {isOpen && (
         <motion.div 
-          initial={{ opacity: 0, y: -10 }}
+          initial={{ opacity: 0, y: -8 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden bg-white border-b border-slate-200 px-6 py-5 space-y-4 shadow-lg"
+          className="md:hidden bg-white/95 backdrop-blur border-b border-slate-200 px-4 py-4 space-y-3.5 shadow-lg"
         >
-          <a href="#kinerja" onClick={() => setIsOpen(false)} className="block text-slate-700 font-medium py-1.5 border-b border-slate-50">Kinerja</a>
-          <a href="#emas" onClick={() => setIsOpen(false)} className="block text-slate-700 font-medium py-1.5 border-b border-slate-50">Tabungan E-Mas</a>
-          <a href="#manajemen" onClick={() => setIsOpen(false)} className="block text-slate-700 font-medium py-1.5">Manajemen</a>
-          <button className="w-full bg-brand-950 text-white px-6 py-3 rounded-xl font-medium text-sm">
+          <a href="#kinerja" onClick={() => setIsOpen(false)} className="block text-sm font-semibold text-slate-700 py-1 border-b border-slate-100 pb-2">Kinerja</a>
+          <a href="#emas" onClick={() => setIsOpen(false)} className="block text-sm font-semibold text-slate-700 py-1 border-b border-slate-100 pb-2">Tabungan E-Mas</a>
+          <a href="#manajemen" onClick={() => setIsOpen(false)} className="block text-sm font-semibold text-slate-700 py-1 pb-1">Manajemen</a>
+          <button className="w-full bg-brand-950 text-white font-semibold text-xs py-2.5 rounded-lg transition-colors focus:ring-2 focus:ring-teal-500 shadow-sm">
             Hubungi Kami
           </button>
         </motion.div>
