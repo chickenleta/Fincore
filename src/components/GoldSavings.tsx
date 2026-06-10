@@ -7,8 +7,8 @@ export default function GoldSavings() {
   const [years, setYears] = useState<number>(3);
   
   // Real-time styled mock data for Gold Savings
-  const goldPriceBuy = 1345000; // Harga beli per gram
-  const goldPriceSell = 1235000; // Harga jual kembali per gram
+  const goldPriceBuy = 2715000; // Harga beli per gram
+  const goldPriceSell = 2570000; // Harga jual kembali per gram
   const averageInflatonProtection = 0.082; // Rata-rata kenaikan emas tahunan ~8.2%
 
   const calculateFutureValue = () => {
@@ -89,7 +89,7 @@ export default function GoldSavings() {
                 <div className="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center mb-4">
                   <Coins className="w-6 h-6 text-orange-500" />
                 </div>
-                <h4 className="font-bold text-slate-900 mb-1">Bebas Pajak & Biaya Ribet</h4>
+                <h4 className="font-bold text-slate-900 mb-1">Bebas Pajak & Tanpa Ribet</h4>
                 <p className="text-sm text-slate-500">Skema bagi hasil dan margin transparan tanpa biaya titip tersembunyi.</p>
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function GoldSavings() {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <p className="text-xs sm:text-sm text-slate-400">Harga Beli Tabungan</p>
+                  <p className="text-xs sm:text-sm text-slate-400">Harga Beli</p>
                   <p className="text-lg sm:text-2xl font-bold text-teal-300">{formattedValue(goldPriceBuy)} <span className="text-[10px] sm:text-xs text-slate-400">/gr</span></p>
                 </div>
                 <div>
