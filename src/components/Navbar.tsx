@@ -6,7 +6,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b border-slate-900/10 transition-all select-none">
+    <nav className="sticky top-0 z-50 w-full bg-white border-b border-slate-200 shadow-sm transition-all select-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center gap-3 shrink-0">
@@ -41,7 +41,7 @@ export default function Navbar() {
         <motion.div 
           initial={{ opacity: 0, y: -8 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden bg-white/95 backdrop-blur border-b border-slate-200 px-4 py-4 space-y-3.5 shadow-lg"
+          className="md:hidden bg-white border-b border-slate-200 px-4 py-4 space-y-3.5 shadow-lg"
         >
           <a href="#kinerja" onClick={() => setIsOpen(false)} className="block text-sm font-semibold text-slate-700 py-1 border-b border-slate-100 pb-2">Kinerja</a>
           <a href="#emas" onClick={() => setIsOpen(false)} className="block text-sm font-semibold text-slate-700 py-1 border-b border-slate-100 pb-2">Tabungan E-Mas</a>
