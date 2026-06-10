@@ -1,6 +1,6 @@
 {
-  "name": "FinCore Capital",
-  "description": "Halaman landing perusahaan finance modern dengan data kinerja dan manajemen.",
+  "name": "BSI RO V Jakarta 2",
+  "description": "Halaman landing Bank Syariah Indonesia (BSI) Regional Office V Jakarta 2 - Jakarta Selatan, Bogor, Depok.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

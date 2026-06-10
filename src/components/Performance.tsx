@@ -5,31 +5,31 @@ import { Activity, Users, Globe2, Percent } from 'lucide-react';
 const stats = [
   {
     id: 1,
-    name: 'Dana Dikelola (AUM)',
-    value: 'Rp 45 Triliun',
+    name: 'Dana Pihak Ketiga (DPK)',
+    value: 'Rp 38.6 Triliun',
     icon: Activity,
-    description: 'Total aset produktif klien'
+    description: 'Amanah simpanan nasabah RO V Jakarta 2'
   },
   {
     id: 2,
-    name: 'Klien Aktif',
-    value: '125.000+',
+    name: 'Nasabah Aktif',
+    value: '2.4 Juta+',
     icon: Users,
-    description: 'Institusi dan individu'
+    description: 'Warga Jakarta Selatan, Bogor & Depok'
   },
   {
     id: 3,
-    name: 'Jejak Global',
-    value: '12 Negara',
+    name: 'Jaringan Cabang',
+    value: '82 Kantor',
     icon: Globe2,
-    description: 'Operasional dan afiliasi'
+    description: 'Outlet layanan tersebar di Jabodetabek'
   },
   {
     id: 4,
-    name: 'Rata-rata Return',
-    value: '18.4%',
+    name: 'Penyaluran Ziswaf',
+    value: 'Rp 145 Miliar',
     icon: Percent,
-    description: 'Return efektif per tahun (5thn)'
+    description: 'Kontribusi sosial & zakat wilayah'
   }
 ];
 
