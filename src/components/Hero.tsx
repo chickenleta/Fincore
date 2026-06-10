@@ -145,9 +145,8 @@ export default function Hero() {
               Assalamu'alaikum <br className="hidden lg:block"/> Insan <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-orange-400">RO V Jakarta 2</span> 👋
             </h1>
             
-            <p className="text-base lg:text-lg text-slate-600 mb-6 max-w-2xl leading-relaxed">
-              Portal Layanan & Kinerja Kantor Wilayah (Regional Office V Jakarta 2) Bank Syariah Indonesia. 
-              Berkomitmen melayani dan memajukan perekonomian syariah di wilayah kerja <strong>Jakarta Selatan, Bogor, dan Depok</strong> melalui solusi keuangan yang inklusif, transparan, dan berkelanjutan.
+            <p className="text-base lg:text-lg text-slate-600 mb-6 max-w-xl leading-relaxed">
+              Portal Layanan & Kinerja BSI RO V Jakarta 2. Berkomitmen melayani wilayah <strong>Jakarta Selatan, Bogor, dan Depok</strong> dengan solusi perbankan syariah yang modern, inklusif, dan berkelanjutan.
             </p>
             
             <p className="text-xl text-slate-700 mb-8 max-w-xl leading-relaxed italic font-semibold border-l-4 border-brand-500 pl-4 py-1">
